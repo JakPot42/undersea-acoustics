@@ -1,0 +1,9 @@
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+click>=8.1
+rich>=13.0
+reportlab>=4.0
+anthropic>=0.40
+obspy>=1.4
+pytest>=8.0
