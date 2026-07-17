@@ -104,7 +104,7 @@ like BELLHOP would attenuate bottom-interacting rays).
 band → Hilbert-transform envelope → FFT of the envelope, which lives at
 the much lower blade-rate frequency. **Tonal peak-picking**: local maxima
 of the time-averaged spectrum that clear a cell-averaging adaptive
-noise-floor threshold — the same idea as P59's CA-CFAR (`dsp-lib`,
+noise-floor threshold — the same idea as the CA-CFAR detector (`dsp-lib`,
 Rohling 1983), applied per-frequency-bin instead of per-range-bin.
 
 ---
