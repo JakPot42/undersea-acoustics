@@ -1,4 +1,7 @@
-# NUWC Undersea Acoustic Intelligence Suite
+# undersea-acoustics: sound propagation and passive acoustic signal processing (educational demo)
+
+Educational demo on synthetic ocean data and a public hydrophone recording.
+Not affiliated with the US Navy or NUWC.
 
 ## Scope — EDUCATIONAL / UNCLASSIFIED DEMONSTRATION ONLY
 
@@ -22,7 +25,7 @@ Printed on every CLI command (`config.SCOPE_DISCLAIMER`):
 
 ## What it is
 
-The two halves of a real ASW pipeline, talking to each other:
+The two halves of an underwater acoustics pipeline, talking to each other:
 
 1. **Ocean environment model**: Mackenzie (1981) sound-speed formula → a
    2D range-independent Snell's-law ray tracer → a range/depth map of
@@ -33,7 +36,7 @@ The two halves of a real ASW pipeline, talking to each other:
 
 The demo overlays the DEMON/tonal detections onto the propagation model
 and has Claude (or a deterministic template in `DEMO_MODE`) write a
-one-page ASW environment brief from the already-computed numbers — Claude
+one-page acoustic environment brief from the already-computed numbers — Claude
 never computes a physics or DSP result itself, same "extracts/narrates,
 never decides" doctrine as every other project in this portfolio.
 
@@ -121,9 +124,8 @@ Mode Water / "18°C Water" in the upper thermocline, North Atlantic Deep
 Water ~2-3°C/34.9-35.0 PSU below ~1500 m) — same `DEMO_MODE`-by-default
 discipline as every other project in this portfolio. The region chosen is
 deep open ocean (~30-35°N, 60-70°W, 5200 m bottom depth) rather than the
-shallow water right outside NUWC Newport's front door, because a SOFAR
-channel and real shadow zones require deep water — that's the blue-water
-ASW environment NUWC's research mission actually covers.
+shallow coastal water of Narragansett Bay, because a SOFAR channel and
+real shadow zones require deep water.
 
 **Hydrophone recording**: no unclassified public dataset of real
 submarine acoustic signatures exists anywhere. What *is* real and public:

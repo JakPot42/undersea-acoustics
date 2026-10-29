@@ -1,4 +1,4 @@
-"""NUWC Undersea Acoustic Intelligence Suite CLI.
+"""undersea-acoustics CLI (educational demo).
 
 EDUCATIONAL / UNCLASSIFIED DEMONSTRATION ONLY. See config.SCOPE_DISCLAIMER,
 printed on every command. Sound-speed profile is synthetic (WOA23-grounded).
@@ -23,7 +23,7 @@ from dashboard import console
 
 @click.group()
 def cli() -> None:
-    """NUWC Undersea Acoustic Intelligence Suite: sound-speed profiling,
+    """undersea-acoustics (educational demo): sound-speed profiling,
     Snell's-law ray tracing / shadow-zone mapping, and a DEMON + tonal
     signal-processing pipeline on a real public hydrophone recording with
     a disclosed synthetic contact overlay.
@@ -108,7 +108,7 @@ def demon(live: bool) -> None:
 @click.option("--live", is_flag=True, default=False, help="Fetch a fresh hydrophone segment live instead of the bundled one.")
 def brief(live: bool) -> None:
     """Run the full pipeline (ray trace + DEMON/tonal signal analysis)
-    and generate the two-panel figure + ASW Environment Brief PDF."""
+    and generate the two-panel figure + Acoustic Environment Brief PDF."""
     dashboard.print_banner()
     console.print("Running full pipeline (ray trace + signal analysis + brief)...")
     prop, sig, brief_text, figure_path, pdf_path = pipeline.run_full_pipeline(use_live=live)

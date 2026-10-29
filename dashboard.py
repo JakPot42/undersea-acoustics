@@ -12,7 +12,7 @@ import config
 
 console = Console(width=115)
 
-_BANNER = "[bold cyan]NUWC Undersea Acoustic Intelligence Suite[/bold cyan]  [dim]v1.0[/dim]"
+_BANNER = "[bold cyan]undersea-acoustics[/bold cyan]  [dim]v1.0, educational demo[/dim]"
 
 
 def print_banner() -> None:
@@ -68,6 +68,6 @@ def print_detection_table(title: str, detections, top_n: int = 10) -> None:
 
 
 def print_brief(text: str) -> None:
-    console.rule("[bold]ASW Environment Brief[/bold]")
+    console.rule("[bold]Acoustic Environment Brief[/bold]")
     console.print(text)
     console.print()

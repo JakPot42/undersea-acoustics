@@ -79,7 +79,7 @@ def plot_two_panel(
     plot_propagation(ax_left, profile, rays, source_depth_m, bottom_depth_m, shadow_grid=shadow_grid)
     mesh = plot_spectrogram(ax_right, spectrogram, tonal_detections, demon_result=demon_result)
     fig.colorbar(mesh, ax=ax_right, label="dB")
-    fig.suptitle("NUWC Undersea Acoustic Intelligence Suite -- Environment + Signal Picture", fontsize=12, fontweight="bold")
+    fig.suptitle("Undersea Acoustics (educational demo) -- Environment + Signal Picture", fontsize=12, fontweight="bold")
     fig.tight_layout(rect=(0, 0, 1, 0.95))
     fig.savefig(save_path, dpi=150)
     plt.close(fig)

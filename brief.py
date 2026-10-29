@@ -1,4 +1,4 @@
-"""brief.py — ASW environment brief synthesis.
+"""brief.py -- acoustic environment brief synthesis.
 
 Same doctrine as every Claude call site in this portfolio: every number in
 the brief (SOFAR axis depth, shadow-zone ranges, detected frequencies) is
@@ -54,7 +54,7 @@ def _deterministic_template(inputs: AssessmentInputs) -> str:
     )
 
     return "\n".join([
-        "ASW ENVIRONMENT & ACOUSTIC ASSESSMENT (deterministic template -- DEMO_MODE)",
+        "ACOUSTIC ENVIRONMENT ASSESSMENT (deterministic template -- DEMO_MODE)",
         "=" * 72,
         config.SCOPE_DISCLAIMER,
         "",
@@ -92,7 +92,7 @@ def _deterministic_template(inputs: AssessmentInputs) -> str:
 
 
 _SYSTEM_PROMPT = (
-    "You write a one-page, plain-English ASW (anti-submarine warfare) ACOUSTIC "
+    "You write a one-page, plain-English UNDERWATER ACOUSTIC "
     "ENVIRONMENT ASSESSMENT from pre-computed, deterministic inputs. You are not "
     "given raw data to analyze -- you are given final numbers (sound speed "
     "profile summary, SOFAR channel axis, shadow-zone ranges, detected tonal and "

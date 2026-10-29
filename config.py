@@ -38,10 +38,8 @@ SCOPE_DISCLAIMER = (
 
 # ---------------------------------------------------------------------------
 # Region: western North Atlantic subtropical gyre (Sargasso Sea sector),
-# chosen instead of the immediate NUWC Newport / Narragansett Bay coastal
-# shelf because a SOFAR channel and deep shadow zones require deep open
-# water (>3000 m) -- exactly the blue-water ASW environment NUWC's research
-# mission actually covers, not the shallow bay outside the front door.
+# chosen instead of the Narragansett Bay coastal shelf because a SOFAR
+# channel and deep shadow zones require deep open water (>3000 m).
 # ---------------------------------------------------------------------------
 REGION_NAME = "Western North Atlantic (Sargasso Sea sector)"
 REGION_LAT = 33.0

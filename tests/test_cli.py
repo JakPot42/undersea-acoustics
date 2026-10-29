@@ -37,5 +37,5 @@ def test_demon_command_runs_clean():
 def test_demo_command_runs_full_pipeline_clean():
     result = _run("demo")
     assert result.exit_code == 0
-    assert "ASW Environment Brief" in result.output
+    assert "Acoustic Environment Brief" in result.output
     assert "SYNTHETIC CONTACT DISCLOSURE" in result.output

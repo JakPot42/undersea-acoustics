@@ -1,5 +1,5 @@
 """pdf_report.py — assembles the two-panel figure + Claude/template brief
-into the "ASW Environment Brief" PDF (ReportLab)."""
+into the "Acoustic Environment Brief" PDF (ReportLab)."""
 from __future__ import annotations
 
 import datetime as _dt
@@ -42,8 +42,8 @@ def build_asw_brief_pdf(
     story = [
         _banner(config.SCOPE_DISCLAIMER, styles),
         Spacer(1, 10),
-        Paragraph("NUWC Undersea Acoustic Intelligence Suite", title_style),
-        Paragraph("ASW Environment &amp; Acoustic Assessment", styles["Heading2"]),
+        Paragraph("Undersea Acoustics (educational demo)", title_style),
+        Paragraph("Acoustic Environment Assessment", styles["Heading2"]),
         Paragraph(
             f"Region: {region_name} &nbsp;|&nbsp; Generated: {_dt.datetime.now():%Y-%m-%d %H:%M} "
             f"&nbsp;|&nbsp; DEMO_MODE={config.DEMO_MODE}",

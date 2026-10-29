@@ -282,7 +282,7 @@ def compute_shadow_grid(
 def shadow_intervals_at_depth(grid: ShadowGrid, target_depth_m: float) -> list[tuple[float, float]]:
     """Range intervals (in m) at a given depth that are NOT covered by any
     ray -- i.e. the shadow zone at that depth. Used to make the ray-trace
-    result concrete for the ASW brief ("a contact at this depth is outside
+    result concrete for the acoustic brief ("a contact at this depth is outside
     direct/refracted coverage between range X and Y")."""
     row = np.clip(np.digitize([target_depth_m], grid.depth_edges_m)[0] - 1, 0, len(grid.depth_edges_m) - 2)
     covered = grid.insonified[row]
